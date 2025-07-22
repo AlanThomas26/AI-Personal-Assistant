@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Bot - Alan's AI Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Leo Bot <i class="fas fa-robot" style="color: var(--accent);"></i></h1>
+    
+    <div class="container">
+        <div class="profile-card">
+            <div class="avatar">
+                <img src="alan1.jpeg" alt="Alan's Profile Picture">
+            </div>
+            <div class="profile-info">
+                <h2>ALAN THOMAS</h2>
+                <p><i class="fas fa-graduation-cap"></i> Computer Engineering Student</p>
+                <p><i class="fas fa-map-marker-alt"></i> Kerala, India</p>
+                <p><i class="fas fa-birthday-cake"></i> 21 years old</p>
+                <div class="social-links">
+                    <a href="https://github.com/AlanThomas26" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/alan-thomas2004?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/alannthomas._?igsh=MWUzODlqeXFwamx1dw==" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:alant8068@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tabs">
+            <div class="tab active" onclick="openTab('about')"><i class="fas fa-user"></i> About</div>
+            <div class="tab" onclick="openTab('skills')"><i class="fas fa-code"></i> Skills</div>
+            <div class="tab" onclick="openTab('projects')"><i class="fas fa-project-diagram"></i> Projects</div>
+            <div class="tab" onclick="openTab('chat')"><i class="fas fa-comments"></i> Chat</div>
+        </div>
+        
+        <div id="about" class="tab-content active">
+            <h3><i class="fas fa-info-circle"></i> Personal Details</h3>
+            <div class="section-content">
+                <p><strong><i class="fas fa-language"></i> Languages:</strong> English (Fluent), Malayalam (Native), Hindi (Basic)</p>
+                <p><strong><i class="fas fa-brain"></i> Personality:</strong> INTP, Analytical, Creative, Introverted</p>
+                <p><strong><i class="fas fa-quote-left"></i> Life Motto:</strong> "Learn relentlessly, build consistently"</p>
+                <p><strong><i class="fas fa-envelope"></i> Contact:</strong> alant8068@gmail.com</p>
+            </div>
+            
+            <h3><i class="fas fa-heart"></i> Interests & Hobbies</h3>
+            <div class="quick-replies">
+                <div class="quick-reply" onclick="sendQuickMessage('What music do you like?')">Music Taste</div>
+                <div class="quick-reply" onclick="sendQuickMessage('What are your favorite books?')">Favorite Books</div>
+                <div class="quick-reply" onclick="sendQuickMessage('Do you play any sports?')">Sports</div>
+                <div class="quick-reply" onclick="sendQuickMessage('What do you do for fun?')">Hobbies</div>
+            </div>
+        </div>
+        
+        <div id="skills" class="tab-content">
+            <h3><i class="fas fa-laptop-code"></i> Technical Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h4>Python</h4>
+                    <p>intermediate</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h4>SQL</h4>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <h4>JavaScript</h4>
+                    <p>Basics</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                    <h4>Linux</h4>
+                    <p>intermediate</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                    <h4>HTML</h4>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h4>C</h4>
+                    <p>intermediate</p>
+                </div>
+            </div>
+            
+            <h3><i class="fas fa-graduation-cap"></i> Currently Learning</h3>
+            <div class="quick-replies">
+                <div class="quick-reply">Large Language Models</div>
+                <div class="quick-reply">Rust Programming</div>
+                <div class="quick-reply">Cloud Architecture</div>
+                <div class="quick-reply">Neural Networks</div>
+            </div>
+        </div>
+        
+        <div id="projects" class="tab-content">
+            <h3><i class="fas fa-tasks"></i> Recent Projects</h3>
+            
+            <div class="project-card">
+                <div class="project-title">
+                    <i class="fas fa-robot"></i> AI Personal Assistant
+                </div>
+                <p>A conversational AI that can manage schedules, answer questions, and automate tasks.</p>
+                <p><strong>Technologies:</strong> HTML,CSS,JAVASCRIPT,TensorFlow</p>
+                <div class="quick-replies" style="margin-top: 10px;">
+                    <div class="quick-reply" style="font-size: 0.8rem;"><i class="fas fa-link"></i> Demo</div>
+                    <div class="quick-reply" style="font-size: 0.8rem;"><i class="fab fa-github"></i> Code</div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-title">
+                    <i class="fas fa-chart-line"></i> Jules Journey 
+                </div>
+                <p>Developed An Interactive Web Application Aimed At Students From Grades 7 To 12, Focused On Promotting Awareness And Education  About Sustainable Energy Concepts And Practices</p>
+                <p><strong>Technologies:</strong> HTML,CSS,JAVASCRIPT</p>
+                <div class="quick-replies" style="margin-top: 10px;">
+                    <div class="quick-reply" style="font-size: 0.8rem;"><i class="fas fa-link"></i> Demo</div>
+                    <div class="quick-reply" style="font-size: 0.8rem;"><i class="fab fa-github"></i> Code</div>
+                </div>
+            </div>
+            
+            <div class="quick-replies" style="margin-top: 20px;">
+                <div class="quick-reply" onclick="sendQuickMessage('Tell me more about your AI projects')">Ask About AI Projects</div>
+                <div class="quick-reply" onclick="sendQuickMessage('What are you currently working on?')">Current Work</div>
+            </div>
+        </div>
+        
+        <div id="chat" class="tab-content">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <i class="fas fa-robot"></i> Chat with Leo Bot
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message ai-message">
+                        Hello! I'm Leo, Alan's personal AI assistant. You can ask me about his skills, projects, or interests. How can I help you today?
+                        <div class="message-time">Just now</div>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" class="chat-input" id="user-input" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+                    <button class="send-button" onclick="sendMessage()">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

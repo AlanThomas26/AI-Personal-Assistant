@@ -38,10 +38,10 @@ To run this project on your local machine, follow these simple steps:
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/YourGitHubUsername/LeoBot-AIAssistant.git
+    git clone https://github.com/AlanThomas26/LeoBot-AIAssistant.git
     ```
 
-    *(Replace `YourGitHubUsername/LeoBot-AIAssistant` with the actual path to your repository once you create it.)*
+    
 
 2.  **Navigate to the project directory:**
 
